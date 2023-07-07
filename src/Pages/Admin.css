@@ -1,0 +1,10 @@
+.Admin {
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40vh;
+    transform: translateY(-50%);
+  }
+  

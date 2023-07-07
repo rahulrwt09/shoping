@@ -1,0 +1,53 @@
+{
+  "products": [
+   
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "nike",
+      "price": 999,
+      "description": "tshirt m size black",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "puma",
+      "price": 230,
+      "description": "tshirt m size pink",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "roadester",
+      "price": 190,
+      "description": "tshirt m size red",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "nike",
+      "price": 250,
+      "description": "tshirt m size red",
+      "gender": "male",
+      "id": 7
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "puma",
+      "price": 250,
+      "description": "hoodi m size red",
+      "gender": "male",
+      "id": 8
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "nike",
+      "price": 2500,
+      "description": "hoodi L size red",
+      "gender": "male",
+      "id": 9
+    }
+  ]
+}
