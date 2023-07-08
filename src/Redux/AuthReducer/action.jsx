@@ -17,8 +17,9 @@ export const login= (userdata)=>(dispatch)=>{
     dispatch(loginreqest())
     axios.post("https://reqres.in/api/login", userdata)
     .then((res)=>{
-        console.log(res);
+        
         dispatch(loginsuccess(res.data.token));
+        console.log(res);
     })
     .catch((err)=>{
         dispatch(loginfailure());
