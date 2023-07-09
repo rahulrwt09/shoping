@@ -1,6 +1,5 @@
 {
   "products": [
-   
     {
       "image": "https://via.placeholder.com/300",
       "brand": "nike",
@@ -48,6 +47,14 @@
       "description": "hoodi L size red",
       "gender": "male",
       "id": 9
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "jolo",
+      "price": 299,
+      "description": "black m tshirt ",
+      "gender": "female",
+      "id": 10
     }
   ]
 }

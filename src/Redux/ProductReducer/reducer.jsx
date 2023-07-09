@@ -1,22 +1,24 @@
 import { GET_PRODUCT_SUCCESS, POST_PRODUCT_SUCCESS, PRODUCT_FAILURE, PRODUCT_REQUEST } from "../actionType";
-
-const initialState= {
+const initialstate= {
     isLoading:false,
-    products:[],
-    isError:false, 
+    isError:false,
+    products:[]
 }
-export const reducer= (state=initialState, {type,payload})=>{
-     switch(type){
+ export const   reducer = (state=initialstate, {type,payload})=>{
+    switch(type){
         case PRODUCT_REQUEST:
-            return{...state, isLoading:true}
+            return {...state,isLoading:true}
         case PRODUCT_FAILURE:
-            return {...state, isError:true, isLoading:false}  
+            return {...state,isLoading:false,isError:true}
+
+      
         case GET_PRODUCT_SUCCESS:
-                return{...state,isLoading:false, products:payload}  
-        
+            return {...state, isLoading:false,products:payload}
+            
         case POST_PRODUCT_SUCCESS:
-            return{...state, isLoading:false}
+                return {...state,isLoading:false}
+    
         default:
             return state;
-     }
+    }
 }

@@ -12,3 +12,8 @@ tool
  routing
  genric  component 
  axios 
+ 
+ ## completed work
+
+ admin page done
+ login page done
