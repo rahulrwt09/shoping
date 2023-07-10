@@ -1,14 +1,18 @@
 import React from 'react'
-import Navbar from '../Coponents/Navbar'
-import ProductCard from '../Coponents/ProductCard'
-import ProductList from '../Coponents/ProductList'
-
+import Navbar from '../Components/Navbar'
+import ProductCard from '../Components/ProductCard'
+import ProductList from '../Components/ProductList'
+import SideBar from "../Components/SideBar"
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar/>
+    <div><Navbar/></div>
+      <div>
+      <SideBar/>
       <ProductList/>
+      </div>
+      
 
     </div>
   )

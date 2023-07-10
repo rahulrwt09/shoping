@@ -28,14 +28,14 @@ export const addproduct =(payload)=>(disptach)=>{
 
 export const getproduct= (dispatch)=>{
    dispatch(productrequest());
-   axios.post("http://localhost:8080/products")
+   axios.get("http://localhost:8080/products")
    .then(
     (res)=>
     {
       dispatch(getproductssuccess(res.data))
     })
    .catch(
-    (err)=>{
+    ()=>{
       dispatch(productfailure())
     }
    )
