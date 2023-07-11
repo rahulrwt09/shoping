@@ -11,6 +11,7 @@ import {
   
   
 } from '@chakra-ui/react'
+import Navbar from '../Components/Navbar';
 const Login = () => {
 
   
@@ -27,6 +28,8 @@ const Login = () => {
       }
 
       return (
+        <>
+        <Navbar/>
     <div className='login'>
 
       
@@ -49,12 +52,12 @@ const Login = () => {
         
       }} />
 
-      <Button onClick={handlelogin} m={4} colorScheme="teal">Log in</Button>
+      <Button onClick={handlelogin} m={4} bg="#00FFFF">Log in</Button>
 
       </FormControl>
     </div>
 
-    
+    </>
   )
 }
 

@@ -5,7 +5,9 @@ import "./navbar.css"
 const Navbar = () => {
   return (
     <div className='navbar'>
-     <h1><i class="fa-light fa-shirt" style={{ color: 'red' }}></i>Clothes Shoping </h1>
+    
+     <h1><i class="fa-solid fa-shirt"  style={{color:"red"}}></i>
+     Wear Store</h1>
      <Link to={"/"}>Home</Link>
      <Link to={"/login"}>Login</Link>
      <Link to={"/admin"}>Add Product</Link>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getproduct } from '../Redux/ProductReducer/action';
 import ProductCard from './ProductCard';
-
+import "./display.css";
 
 const ProductList = () => {
   const dispatch= useDispatch();
@@ -14,7 +14,7 @@ const ProductList = () => {
   }, [])
   console.log(prodcuts)
   return (
-    <div>
+    <div className='container'>
        {/* {prodcuts.length>0 &&
        prodcuts.map((el)=>{
         return <ProductCard key={el.id} product={el}/>

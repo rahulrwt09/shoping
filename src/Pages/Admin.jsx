@@ -10,6 +10,7 @@ import {
 import './Admin.css';
 import { addproduct } from '../Redux/ProductReducer/action';
 import { useDispatch } from 'react-redux';
+import Navbar from '../Components/Navbar';
 
 let initialstate= {
   image:"",
@@ -42,7 +43,10 @@ const handelchange= (e)=>{
 
   
       return (
+      <>
+       <Navbar/>
     <div className='Admin'>
+       
     <form  onSubmit={(e)=>{
       handelsubmit(e);
      }} >
@@ -103,6 +107,7 @@ const handelchange= (e)=>{
       </FormControl>
       </form>
     </div>
+    </>
   )
 }
 

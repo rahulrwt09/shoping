@@ -5,14 +5,16 @@ import ProductList from '../Components/ProductList'
 import SideBar from "../Components/SideBar"
 
 const HomePage = () => {
+
   return (
     <div>
     <div><Navbar/></div>
-      <div>
-      <SideBar/>
-      <ProductList/>
+    <div style={{display:"flex",gap:"20px"}}>
+      <div style={{width:"20%"}}>
+      <SideBar/> </div>
+      <div style={{width:"80%"}}><ProductList/></div>
+     
       </div>
-      
 
     </div>
   )
