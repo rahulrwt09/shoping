@@ -5,7 +5,7 @@ export const getproductssuccess= (payload)=>{
 
 }
 
-export const postproductssuccess= (payload)=>{
+export const postproductssuccess= ()=>{
   return {type:POST_PRODUCT_SUCCESS}
 }
 
@@ -26,9 +26,9 @@ export const addproduct =(payload)=>(disptach)=>{
      .catch((err)=>{disptach(productfailure())})
 }
 
-export const getproduct= (dispatch)=>{
+export const getproduct = (obj)=>(dispatch)=>{
    dispatch(productrequest());
-   axios.get("http://localhost:8080/products")
+   axios.get("http://localhost:8080/products",obj)
    .then(
     (res)=>
     {
